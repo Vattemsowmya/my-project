@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MYWEBPAGE</title>
+<script>
+function submitFuntion()
+{
+var x=document.forms["myform"]["username"].value;
+var y=document.forms["myform"]["password"].value;
+if(x==null||x==""||y==null||y=="")
+ {
+ alert("both fields cannot be empty.");
+  }
+  else{
+ if(x=="sowmya")
+   {
+   if(y=="1234")
+      {
+       alert("login successful");
+      }
+      else{
+        alert("wrong password");
+       }
+     }
+     else{
+        alert("user doesnot exist");
+     }
+    }
+}
+</script>
+</head>
+<body style="background-color:pink;">
+<form name="myform" onsubmit="sumitFunction()">
+<fieldset>
+<legend>Login</legend>
+<username style="color:red;">
+Username:<input type="text" name="username"><br>
+</username>
+<password style="color:red;">
+Password:<input type="password" name="pwd"><br>
+</password>
+<input type= "submit" value="submit">
+<p>forgot password?</p>
+</fieldset>
+</form>
+</body>
+</html>
